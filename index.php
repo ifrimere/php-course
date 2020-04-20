@@ -6,7 +6,7 @@
   <body>
     <?php
 	    $name = "PHP Store";
-			$credit = 1000; 
+		$credit = 1000; 
 
 	    echo "<h1>Welcome to ".$name."!</h1>";
 	    echo "<h2>You have $".$credit." in your wallet.</h2>";
@@ -24,9 +24,14 @@
 
 	    foreach($products as $key => $value){
 		    if($value <= $credit ){
-		    	echo "<p>".$key."</p>"; 
-		    }
+		    	echo "<p>".$key."</p>";            
 	    }
+      
+	    }
+        $amount=800;
+        $taxRate=0.0825;
+        $addedTax= $amount*$taxRate;  //amount = 800, tax = .0825
+        echo "<h2>Added tax is $".$addedTax." </h2>";
     ?>
   </body>
 </html>

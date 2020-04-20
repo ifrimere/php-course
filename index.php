@@ -32,6 +32,13 @@
         $taxRate=0.0825;
         $addedTax= $amount*$taxRate;  //amount = 800, tax = .0825
         echo "<h2>Added tax is $".$addedTax." </h2>";
+	     function tax_calc($amount,$tax){
+  	$calculate_tax = $amount*$tax;
+  	$amount = round($amount+$calculate_tax,2);
+  	return $amount;}
+        
+ echo $amount
+	  
     ?>
   </body>
 </html>
